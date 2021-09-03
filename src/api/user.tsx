@@ -4,7 +4,7 @@ import User from "../types/User";
 export function login(user: User) {
 	return new Promise((resolve, reject) => {
 		axios
-			.post("https://api-nodejs-todolist.herokuapp.com/user/login", {
+			.post("/user/login", {
 				email: user.email,
 				password: user.password,
 			})
@@ -21,7 +21,7 @@ export function login(user: User) {
 export function signup(user: User) {
 	return new Promise((resolve, reject) => {
 		axios
-			.post("https://api-nodejs-todolist.herokuapp.com/user/register", {
+			.post("/user/register", {
 				name: user.name,
 				age: user.age,
 				email: user.email,

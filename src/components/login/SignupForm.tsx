@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { signup } from "./../../api/user";
 import { connect } from "react-redux";
 import { loggedIn } from "./../../store/reducers/app";
+import Loading from "../Loading";
 
 function SignupForm(props: any) {
 	const [name, setName] = useState("");
@@ -72,7 +73,7 @@ function SignupForm(props: any) {
 					type="password"
 					placeholder="Enter Your Password"
 				/>
-				{loading ? <div>loading ...</div> : <input type="submit" />}{" "}
+				{loading ? <Loading/> : <input type="submit" />}{" "}
 			</form>
 			{errors ? (
 				errors.map((error) => <p className="error">{error}</p>)
