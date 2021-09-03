@@ -1,7 +1,7 @@
 import React from "react";
 import AddTaskForm from "./AddTaskForm";
 import TaskList from "./TaskList";
-import "./style.css"
+import "./style.css";
 
 function TodoApp() {
 	return (

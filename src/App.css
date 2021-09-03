@@ -7,15 +7,12 @@
 #61C9A8
 #BA3B46 */
 
-
-
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
-
 
 .App {
 	background-color: rgb(93, 143, 201);
 	min-height: 100vh;
-    padding: 1px 0;
+	padding: 1px 0;
 }
